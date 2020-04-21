@@ -18,5 +18,17 @@ class TwentyTwoSpec extends BaseSpec {
         )
       }
     }
+
+    "uses hashes" should {
+      "return ['the', 'quick', 'brown', 'fox']" in {
+        TwentyTwo.solveWithHashes(Set("quick", "brown", "the", "fox"))("thequickbrownfox") shouldBe List("the", "quick", "brown", "fox")
+      }
+
+      "return ['bedbath', 'and', 'beyond'] " in {
+        List(List("bed", "bath", "and", "beyond"), List("bedbath", "and", "beyond")) should contain(
+          TwentyTwo.solveWithHashes(Set("bed", "bath", "bedbath", "and", "beyond"))("bedbathandbeyond")
+        )
+      }
+    }
   }
 }
