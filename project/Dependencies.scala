@@ -4,13 +4,13 @@ import sbt._
 object Dependencies {
 
   object Version {
-    lazy val janino = "3.1.0"
+    lazy val janino = "3.1.2"
     lazy val logbackClassic = "1.2.3"
     lazy val newtype = "0.4.3"
-    lazy val refined = "0.9.12"
-    lazy val scalaCheckShapeless = "1.2.4"
+    lazy val refined = "0.9.13"
+    lazy val scalaCheckShapeless = "1.2.5"
     lazy val scalaLogging = "3.9.2"
-    lazy val scalaTest = "3.1.0"
+    lazy val scalaTest = "3.1.1"
     lazy val scalafixSortImports = "0.3.2"
   }
 
