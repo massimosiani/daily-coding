@@ -7,11 +7,12 @@ object Dependencies {
     lazy val janino = "3.1.2"
     lazy val logbackClassic = "1.2.3"
     lazy val newtype = "0.4.3"
-    lazy val refined = "0.9.13"
+    lazy val refined = "0.9.14"
     lazy val scalaCheckShapeless = "1.2.5"
     lazy val scalaLogging = "3.9.2"
     lazy val scalaTest = "3.1.1"
-    lazy val scalafixSortImports = "0.3.2"
+    lazy val scalafixSortImports = "0.4.1"
+    lazy val scalaTestPlus = "3.1.1.1"
   }
 
   lazy val core: Seq[Setting[_]] = deps(
@@ -27,6 +28,7 @@ object Dependencies {
 
   lazy val test: Seq[Setting[_]] = deps(
     "org.scalatest" %% "scalatest" % Version.scalaTest % Test,
+    "org.scalatestplus" %% "scalacheck-1-14" % Version.scalaTestPlus % Test,
     "com.github.alexarchambault" %% "scalacheck-shapeless_1.14" % Version.scalaCheckShapeless % Test
   )
 

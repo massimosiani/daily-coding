@@ -10,7 +10,6 @@ object Main extends App {
     val extrema: Stats = input.filter(_ > 0).foldLeft(Stats(0, 0)) { (acc, n) =>
       val acc2 = if (n < acc.min || acc.min == 0) acc.copy(min = n) else acc
       val acc3 = if (n > acc2.max || acc2.max == 0) acc2.copy(max = n) else acc2
-      println(acc3)
       acc3
     }
     val result = extrema match {

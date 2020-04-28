@@ -1,5 +1,5 @@
-addSbtPlugin("ch.epfl.scala" % "sbt-scalafix" % "0.9.15")
-addSbtPlugin("org.scalameta" % "sbt-scalafmt" % "2.3.2")
+addSbtPlugin("ch.epfl.scala" % "sbt-scalafix" % "0.9.15-1")
+addSbtPlugin("org.scalameta" % "sbt-scalafmt" % "2.3.4")
 addSbtPlugin("com.timushev.sbt" % "sbt-updates" % "0.5.0")
 addSbtPlugin("io.github.davidgregory084" % "sbt-tpolecat" % "0.1.11")
 addSbtPlugin("org.scoverage" % "sbt-scoverage" % "1.6.1")
